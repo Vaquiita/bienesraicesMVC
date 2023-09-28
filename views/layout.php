@@ -35,22 +35,7 @@ $auth = $_SESSION['login'];
 
                         <ul class="navegacion-ul">
                         <?php if(!$auth) : ?>
-                            <li class="cuenta-content">
-                                <div class="cuenta-a">
-                                    <a class="enlace-nav dropbtn" >Cuenta</a>
-                                    <i class=" dropbtn fa-sharp fa-solid fa-angle-down"></i>
-                                </div>
-                                <div class="cuenta-subcontent">
-                                    <div class="flecha">
-                                        <i class="fa-sharp fa-solid fa-play"></i>
-                                        <a class="enlace-nav" class="a" href="/">Registrarse</a>
-                                    </div>
-                                    <div class="flecha">
-                                        <i class="fa-sharp fa-solid fa-play"></i>
-                                        <a class="enlace-nav" href="/login">Iniciar Sesion</a>
-                                    </div>
-                                </div>
-                            </li>
+                            <li><a class="enlace-nav" href="/login">Login</a></li>
                         <?php else : ?>
                             <li class="cuenta-content">
                                 <div class="cuenta-a">
